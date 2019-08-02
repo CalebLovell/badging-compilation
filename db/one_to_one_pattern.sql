@@ -1,14 +1,16 @@
-CREATE TABLE users (
-	user_id serial PRIMARY KEY,
-	user_name varchar(255)
+-- One-to-One pattern example: each ssn can only have one person (owner) --
+
+-- Creates people table with Primary Key --
+
+CREATE TABLE people (
+	person_id serial PRIMARY KEY,
+	person_name varchar(255)
 )
 
--- Creates users table with Primary Key --
+-- Creates ssns table with Foreign Key to reference people table to record the person for each ssn --
 
-CREATE TABLE favorites (
-	favorite_id serial NOT NULL UNIQUE,
-	favorite_name varchar(255),
-	user_id INTEGER REFERENCES users(user_id)
+CREATE TABLE ssns (
+	ssn_id serial NOT NULL UNIQUE,
+	ssn_number integer,
+	person_id INTEGER REFERENCES people(person_id)
 )
-
--- Creates favorites table with Foreign Key to reference user table to record the user for each favorite created --
