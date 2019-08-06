@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-function Child() {
+const Child = (props) => {
   return (
     <div className="child">
-      <h1>Child Component</h1>
+      <div className="counter">Counter: {props.count}</div>
     </div>
   );
-}
+};
 
 export default Child;

@@ -1,7 +1,8 @@
 .app {
   width: 100vw;
   height: 100vh;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: white;
 }
 
@@ -11,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .parent {
@@ -21,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 24px;
 }
 
 .child-container {
@@ -36,4 +38,19 @@
   width: 20%;
   background-color: white;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.counter {
+  width: 50%;
+  height: 40px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
