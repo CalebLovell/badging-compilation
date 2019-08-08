@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Child from "./Child";
+import 'redux';
 
 const Parent = () => {
   const [count, setCount] = useState(0);
