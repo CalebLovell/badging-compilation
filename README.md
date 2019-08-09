@@ -3,9 +3,9 @@ This is a fake project with nothing but a bunch of random parts to prove compete
 List of things to cross off here:
 
 React Redux
-React - Redux (store, reducer)
+<!-- React - Redux (store, reducer)
 React - Redux (actions, action builders, mapDispatchToProps object)
-React - Redux (connect, mapStateToProps, share state)
+React - Redux (connect, mapStateToProps, share state) -->
 
 Server
 Server - REST (PUT endpoint)
